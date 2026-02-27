@@ -1,0 +1,289 @@
+.contact__main-container {
+  margin: 5rem 0 2rem 0;
+  padding: 2rem 0;
+}
+
+.contact__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: var(--outfit-font-family);
+}
+
+.contact__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact__card {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 1px solid #a4a7ff6b;
+  border-radius: 1rem;
+  background: #31349513;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.contact__card:hover {
+  -webkit-transform: translateY(-10px) scale(0.99);
+  -ms-transform: translateY(-10px) scale(0.99);
+  transform: translateY(-10px) scale(0.99);
+  background: #31349523;
+}
+
+.contact__card svg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(64, 0, 143, 0.09)),
+    to(rgba(39, 92, 183, 0.09))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(64, 0, 143, 0.09),
+    rgba(39, 92, 183, 0.09)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(64, 0, 143, 0.09),
+    rgba(39, 92, 183, 0.09)
+  );
+  margin-bottom: 1rem;
+  padding: 25px;
+  color: var(--text-color);
+}
+
+.contact__card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact__card p {
+  font-size: 14px;
+  margin: 10px 0;
+  text-wrap: nowrap;
+  line-height: 25px;
+  color: var(--text-color);
+}
+
+.form {
+  width: 100%;
+  padding: 0 5rem 0 0;
+}
+
+.input-box {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.input-box:first-child {
+  margin: 0 0 1rem 0;
+}
+
+.text-label {
+  margin: 1rem 0;
+  padding: 0 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #a4a7ff6b;
+  padding: 1.2rem 1rem;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(64, 0, 143, 0.09)),
+    to(rgba(39, 92, 183, 0.09))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(64, 0, 143, 0.09),
+    rgba(39, 92, 183, 0.09)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(64, 0, 143, 0.09),
+    rgba(39, 92, 183, 0.09)
+  );
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#3164ff),
+    to(#5f87ff)
+  );
+  background: -o-linear-gradient(left, #3164ff, #5f87ff);
+  background: linear-gradient(to right, #3164ff, #5f87ff);
+  color: var(--text-color);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 1.5rem 0 0 0;
+}
+
+.contact-btn:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#2058ff),
+    to(#7698ff)
+  );
+  background: -o-linear-gradient(left, #2058ff, #7698ff);
+  background: linear-gradient(to right, #2058ff, #7698ff);
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+body.dark .contact-btn {
+  color: #fff;
+}
+
+.contact__col.right {
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(64, 0, 143, 0.09)),
+    to(rgba(39, 92, 183, 0.09))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(64, 0, 143, 0.09),
+    rgba(39, 92, 183, 0.09)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(64, 0, 143, 0.09),
+    rgba(39, 92, 183, 0.09)
+  );
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact__col.right img {
+  width: 120%;
+  height: 40rem;
+}
+
+/* Contact Media Queries */
+@media screen and (max-width: 1144px) {
+  .form {
+    padding: 0 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .contact__cards {
+    -ms-grid-columns: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__cards {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .contact__row,
+  .contact__cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .contact__cards {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .contact__cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}

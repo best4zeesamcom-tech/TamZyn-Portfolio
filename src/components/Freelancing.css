@@ -1,0 +1,112 @@
+.freelancing__container {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#2052be42),
+    to(#040d2220)
+  );
+  background: -o-linear-gradient(bottom, #2052be42, #040d2220);
+  background: linear-gradient(to top, #2052be42, #040d2220);
+  padding: 1rem 2rem 0 2rem;
+  border-radius: 1rem;
+}
+
+body.dark .freelancing__container {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d4e2ff16),
+    to(#b7cdffa2)
+  );
+  background: -o-linear-gradient(top, #d4e2ff16, #b7cdffa2);
+  background: linear-gradient(to bottom, #d4e2ff16, #b7cdffa2);
+}
+
+.freelancing__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+  grid-template-columns: 55% 45%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.freelancing__col.left h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.freelancing__col.left h2 span {
+  background: var(--primary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  color: rgb(85, 170, 255);
+}
+
+body.dark .freelancing__col.left h2 span {
+  color: rgb(0, 98, 255);
+}
+
+.freelancing__col.left p {
+  line-height: 25px;
+}
+
+.freelancing__col.right {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.freelancing__col .freelancing-image {
+  height: 100%;
+  width: 100%;
+}
+
+.freelancing__col .freelancing-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hire-btn {
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
+  margin-right: 1rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#558effad),
+    to(#064ce350)
+  );
+  background: -o-linear-gradient(top, #558effad, #064ce350);
+  background: linear-gradient(to bottom, #558effad, #064ce350);
+}
+
+body.dark .hire-btn {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#4669af),
+    to(#064ce350)
+  );
+  background: -o-linear-gradient(bottom, #4669af, #064ce350);
+  background: linear-gradient(to top, #4669af, #064ce350);
+}
+
+/* Freelancing Media Queries */
+@media screen and (max-width: 819px) {
+  .freelancing__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
