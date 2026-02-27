@@ -48,7 +48,7 @@ const Navbar = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [navLinks]);
 
   return (
     <nav className="navbar">
@@ -79,9 +79,9 @@ const Navbar = () => {
         ) : (
           <RiSunFill onClick={toggleTheme} title="Toggle dark or light" />
         )}
-        <a href="javascript:void()" className="hide-mobile-screen"><RiLinkedinBoxFill /></a>
-        <a href="javascript:void()" className="hide-mobile-screen"><RiFacebookCircleFill /></a>
-        <a href="javascript:void()" className="hide-mobile-screen"><RiInstagramFill /></a>
+        <a href="" className="hide-mobile-screen"><RiLinkedinBoxFill /></a>
+        <a href="#" className="hide-mobile-screen"><RiFacebookCircleFill /></a>
+        <a href="#" className="hide-mobile-screen"><RiInstagramFill /></a>
       </div>
 
       <button id="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
