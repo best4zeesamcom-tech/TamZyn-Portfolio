@@ -9,8 +9,8 @@ const Footer = () => {
     { label: 'Home', href: '#home' },
     { label: 'About Me', href: '#about' },
     { label: 'Projects', href: '#projects' },
-    { label: 'Privacy Policy', href: 'javascript:void()' },
-    { label: 'Disclaimer', href: 'javascript:void()' }
+    { label: 'Privacy Policy', href: '#' },
+    { label: 'Disclaimer', href: '#' }
   ];
 
   const socialIcons = [

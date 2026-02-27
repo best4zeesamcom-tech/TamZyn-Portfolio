@@ -9,16 +9,16 @@ const Projects = () => {
       title: 'Crypto Portfolio Design',
       description: 'A responsive and user-friendly crypto portfolio design with features like real-time market data, portfolio tracking, and more.',
       image: '/assets/images/project-1.png',
-      preview: 'javascript:void()',
-      github: 'javascript:void()'
+      preview: '#',
+      github: '#'
     },
     {
       id: 2,
       title: 'AI Telehealth & Telemedicine',
       description: 'A platform that helps doctors and patients to connect with each other, providing a seamless telehealth and telemedicine experience.',
       image: '/assets/images/project-2.png',
-      preview: 'javascript:void()',
-      github: 'javascript:void()',
+      preview: '#',
+      github: '#',
       bookmark: true
     },
     {
@@ -26,8 +26,8 @@ const Projects = () => {
       title: 'FlowFunds a Mobile app',
       description: 'A mobile app that helps users find and book flow funds, ensuring they receive the funds they need when they need them.',
       image: '/assets/images/project-3.png',
-      preview: 'javascript:void()',
-      github: 'javascript:void()'
+      preview: '#',
+      github: '#'
     }
   ];
 
